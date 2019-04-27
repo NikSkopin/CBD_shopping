@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400&amp;subset=latin-ext" rel="stylesheet"> 
@@ -22,40 +22,52 @@
   <body>
     
     <header>
-      <nav class="navbar navbar-expand-md text-uppercase navbar-dark justify-content-between">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
+      <nav class="navbar">
+        <button class="navbar-btn-collapse" onclick="openNav()">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+        <div class="navbar-collapsing-menu"> <!-- div for collapsing menu  -->
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <ul class="navbar-left">
+            <li class="navbar-left-item active">
+              <a class="navbar-left-link" href="#">Home</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">products</a>
+            <li class="navbar-left-item">
+              <a class="navbar-left-link" href="#">products</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">faqs</a>
+            <li class="navbar-left-item">
+              <a class="navbar-left-link" href="#">faqs</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">contact us</a>
+            <li class="navbar-left-item">
+              <a class="navbar-left-link" href="#">contact us</a>
             </li>    
           </ul>
         </div>
 
         <a class="navbar-brand" href="#">CBD</a>
 
-        <ul class="navbar-nav navbar-right">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">login</a>
+        <ul class="navbar-right">
+          <li class="navbar-right-item">
+            <a class="navbar-right-link" href="#">login</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">cart (0)</a>
+          <li class="navbar-right-item">
+            <a class="navbar-right-link" href="#">cart (0)</a>
           </li>
         </ul>
 
       </nav>
+
+      <div class="container slogan">
+        <h1>Enhancing Life <br>
+          Excelling in Care</h1>
+        <p>Choose Wisely. Choose CBD.</p>
+        <a href="#">start-shopping</a>
+        <a href="#">See all products</a>
+      </div>
 
     </header>
 

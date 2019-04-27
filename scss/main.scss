@@ -1,8 +1,23 @@
 @import 'config';
 
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 body {
     font-family: $primary-font;
 }
+
 
 // header
 
@@ -12,6 +27,7 @@ header {
     background-image: url('/dist/img/bg-main.jpg');
     background-size: cover;
     background-position: center;
+    z-index: 0;
 
     &:before {
         content: '';
@@ -21,11 +37,91 @@ header {
         height: 100%;
         left: 0;
         background-image: linear-gradient(180deg, rgba(1,24,63,0.35) 0%, rgba(1,24,63,0) 30%, rgba(1,24,63,0) 100%);
-        z-index: 0;
+        z-index: -1;
+    }
+
+    .slogan {
+        text-align: right;
+        margin-top: 9rem;
+
+        h1 {
+            font-size: 3.43rem;
+            font-weight: 400;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            line-height: 4.68rem;
+
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.42rem;
+            color: #f7f8f3;
+            opacity: 0.7;
+        }
+
+        a {
+            &:nth-child(1) {
+                display: block;
+            }
+        }
     }
 }
 
-.navbar-collapse {
-    flex-grow: initial;
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 10px 0 10px;
+
+    &-btn-collapse {
+        border: none;
+        border-radius: 4px;
+        display: none;
+        margin: 10px 0 0 10px;
+        background-color: rgb(1,24,63);
+        span {
+            display: block;
+            width: 16px;
+            margin: 6px 0;
+            border: 1px solid #fff;
+        }
+    }
+
+    &-left {
+        padding-left: 0;
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+    }
+
+    &-right {
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            
+        }
+    }
+
+    &-brand {
+        position: absolute;
+        left: 48%;
+        top: 16px;
+        font-size: 1.9rem;
+    }    
 }
+
+.closebtn {
+    display: none;
+}
+
+
 
