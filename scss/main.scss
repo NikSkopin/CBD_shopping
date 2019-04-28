@@ -63,12 +63,26 @@ header {
         }
 
         a {
-            &:nth-child(1) {
-                display: block;
+            display: block;
+            &:first-of-type {
+                width: 16.875rem;
+                border: 1px solid rgba(#9db892, 0.8);
+                margin-left: auto;
+                padding: 25px;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.25rem;
+            }
+            &:last-of-type {
+                margin-top:40px;
+                font-weight: 300;
+                font-size: 1.125rem;
+                letter-spacing: 0.315rem;
             }
         }
     }
 }
+
 
 .navbar {
     position: relative;
