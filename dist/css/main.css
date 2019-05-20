@@ -44,6 +44,8 @@ header .slogan {
 }
 
 header .slogan h1 {
+  width: 42rem;
+  margin-left: auto;
   font-size: 3.43rem;
   font-weight: 400;
   color: #fff;
