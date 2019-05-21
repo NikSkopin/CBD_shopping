@@ -37,6 +37,9 @@
             <li class="navbar-left-item active">
               <a class="navbar-left-link" href="#">Home</a>
             </li>
+            <li class="navbar-left-item active">
+              <a class="navbar-left-link" href="#">About</a>
+            </li>
             <li class="navbar-left-item">
               <a class="navbar-left-link" href="#">products</a>
             </li>
@@ -71,41 +74,76 @@
 
     </header>
 
-    <section class="products container">
-      <div class="produsts-weare">
+    <section class="products">
+      <div class="products-weare">
         <h1>we are what we are</h1>
         <img src="./img/weare-logos.png" alt="main pros">
       </div>
       
-      <div class="products-tabs">
-        <button class="tablinks" onclick="opentab(event, 'tab-one')">what is cbd</button>
-        <button class="tablinks" onclick="opentab(event, 'tab-two')">benefits</button>
-        <button class="tablinks" onclick="opentab(event, 'tab-three')">our difference</button>
-      </div>
-      
-      <!-- Tab content -->
-      <div id="tab-one" class="tabcontent">
-        <h3>what it is and how it works</h3>
-        <p>CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for supporting the body and mind in many
-        ways.* Charlotte’s Web products have cannabinoids with CBD extract.</p>
+      <div class="container">
+        <div class="products-tabs">
+          <button class="tablinks active" onclick="opentab(event, 'tab-one')">what is cbd</button>
+          <button class="tablinks" onclick="opentab(event, 'tab-two')">benefits</button>
+          <button class="tablinks" onclick="opentab(event, 'tab-three')">our difference</button>
+        </div>        
         
-        <p>Not to be confused with oil from hemp seeds (which doesn’t contain cannabinoids), CBD comes from the flowers and leaves
-        of the hemp plant.</p>
-        
-        <p>Why does CBD work? The human body has a vast network of receptors, the endocannabinoid system.</p>
+        <div id="tab-one" class="tabcontent showtab">
+          
+          <div class="tab-text">
+            <h3>what it is and how it works</h3>
+            <p>CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for supporting the body and mind in many ways. Charlotte’s Web products have cannabinoids with CBD extract.</p>
+            
+            <p>Not to be confused with oil from hemp seeds (which doesn’t contain cannabinoids), CBD comes from the flowers and leaves of the hemp plant.</p>
+            
+            <p>Why does CBD work? The human body has a vast network of receptors, the endocannabinoid system.</p>
+          </div>
 
-        <img src="./img/whatweare-img-1.png" alt="what is cbd image">
-        <img src="./img/whatweare-img-2.png" alt="what is cbd image">
-      </div>
-      
-      <div id="tab-two" class="tabcontent">
-        <h3>benefits</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quaerat. Facere, vitae officia! Aliquid necessitatibus similique magnam cum quaerat ratione!</p>
-      </div>
-      
-      <div id="tab-three" class="tabcontent">
-        <h3>our difference</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at atque possimus non dolorum quia iusto, itaque omnis, sunt adipisci culpa dicta hic tenetur velit pariatur, mollitia aliquam eum deleniti!</p>
+          <div class="tab-images">
+            <figure>
+              <img src="./img/whatweare-img-1.png" alt="what is cbd image">
+            </figure>
+            <figure>
+              <img src="./img/whatweare-img-2.png" alt="what is cbd image">
+            </figure>
+          </div>
+        </div>
+        
+        <div id="tab-two" class="tabcontent">
+          
+          <div class="tab-text">
+            <h3>benefits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate, nulla voluptatibus molestiae magni ex veritatis rem et soluta dignissimos?</p>
+          
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui reiciendis aut dolores culpa rerum nostrum, distinctio repudiandae incidunt quae veritatis, necessitatibus natus, sunt alias quos error repellat! Consequuntur, aliquam maiores!</p>            
+          </div>
+          
+          <div class="tab-images">
+            <figure>
+              <img src="./img/whatweare-img-1.png" alt="what is cbd image">
+            </figure>
+            <figure>
+              <img src="./img/whatweare-img-2.png" alt="what is cbd image">
+            </figure>
+          </div>
+        </div>
+               
+        <div id="tab-three" class="tabcontent">
+          
+          <div class="tab-text">
+            <h3>our difference</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus, veritatis veniam perspiciatis sapiente cumque distinctio doloribus delectus deserunt deleniti dolores. Ad expedita fugiat amet excepturi fugit minima. Quis, obcaecati veniam. Unde, illo a mollitia, eligendi reiciendis non quia nisi placeat similique fugit eveniet quae maiores error voluptas iste facilis.</p>
+          </div>
+          
+          <div class="tab-images">
+            <figure>
+              <img src="./img/whatweare-img-1.png" alt="what is cbd image">
+            </figure>
+            <figure>
+              <img src="./img/whatweare-img-2.png" alt="what is cbd image">
+            </figure>
+          </div>
+        </div>
+
       </div>
     </section>
 

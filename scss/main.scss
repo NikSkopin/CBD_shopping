@@ -1,7 +1,13 @@
 @import 'config';
+@import 'products';
+@import 'tabs';
 
 * {
     box-sizing: border-box;
+}
+
+section, header, footer {
+    padding: 1px;
 }
 
 a {
@@ -24,7 +30,7 @@ body {
 header {
     height: 100vh;
     position: relative;
-    background-image: url('/dist/img/bg-main.jpg');
+    background-image: url('../img/bg-main.jpg');
     background-size: cover;
     background-position: center;
     z-index: 0;

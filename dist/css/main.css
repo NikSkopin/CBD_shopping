@@ -1,6 +1,115 @@
+.products {
+  background-color: #f7f8f3;
+}
+
+.products-weare {
+  width: 32rem;
+  margin: 6.25rem auto;
+  text-align: center;
+}
+
+.products-weare h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+.products-tabs {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.products-tabs .tablinks {
+  width: 33.3%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.375rem;
+  color: #1c1c1b;
+  font-weight: 400;
+}
+
+.products-tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.products-tabs button:hover {
+  border-bottom: 1px solid #1c1c1b;
+}
+
+.products-tabs button.active {
+  border-bottom: 1px solid #1c1c1b;
+}
+
+.tabcontent {
+  display: none;
+  padding: 12px 12px;
+}
+
+.tab-text {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.tab-text h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3.125rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+.tab-text p {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #6e774a;
+  line-height: 2.125rem;
+  letter-spacing: 0.045rem;
+}
+
+.tab-images {
+  width: 50%;
+}
+
+.tab-images figure {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-images img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.showtab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+section, header, footer {
+  padding: 1px;
 }
 
 a {
@@ -20,7 +129,7 @@ body {
 header {
   height: 100vh;
   position: relative;
-  background-image: url("/dist/img/bg-main.jpg");
+  background-image: url("../img/bg-main.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
