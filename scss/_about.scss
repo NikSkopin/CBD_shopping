@@ -1,0 +1,15 @@
+.about {
+
+    &-weare {
+        width: 32rem;
+        margin: 6.25rem auto;
+        text-align: center;
+        
+        h1 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.3rem;
+        }
+    }
+}

@@ -1,21 +1,81 @@
-.products {
-  background-color: #f7f8f3;
-}
-
-.products-weare {
+.about-weare {
   width: 32rem;
   margin: 6.25rem auto;
   text-align: center;
 }
 
-.products-weare h1 {
+.about-weare h1 {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.3rem;
 }
 
-.products-tabs {
+.products .buttons {
+  width: 20%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slider-container .slider {
+  list-style: none;
+  white-space: nowrap;
+  padding: 0;
+  font-size: 0;
+}
+
+.slider-container .slider-item {
+  display: inline-block;
+  border: 1px solid #ced6af;
+  background-color: #fff;
+  width: 32%;
+  margin: 0 2% 0 0;
+}
+
+.slider-container .slider-item h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1688rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.slider-container .slider-item img {
+  width: 30%;
+  margin: 30px auto 50px auto;
+  display: block;
+}
+
+.slider-container .slider-item p {
+  display: inline-block;
+  width: 70%;
+  margin: 0;
+  font-size: 1rem;
+  background-color: #f7f8f3;
+  padding: 10px 0 10px 15px;
+  border-top: 1px solid #ced6af;
+}
+
+.slider-container .slider-item button {
+  display: inline-block;
+  width: 30%;
+  border: none;
+  margin: 0;
+  font-size: 1rem;
+  background-color: #6e774a;
+  padding: 10px 0 10px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.about-tabs {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,7 +84,7 @@
       justify-content: space-around;
 }
 
-.products-tabs .tablinks {
+.about-tabs .tablinks {
   width: 33.3%;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -33,7 +93,7 @@
   font-weight: 400;
 }
 
-.products-tabs button {
+.about-tabs button {
   background-color: inherit;
   float: left;
   border: none;
@@ -44,11 +104,11 @@
   transition: 0.3s;
 }
 
-.products-tabs button:hover {
+.about-tabs button:hover {
   border-bottom: 1px solid #1c1c1b;
 }
 
-.products-tabs button.active {
+.about-tabs button.active {
   border-bottom: 1px solid #1c1c1b;
 }
 
@@ -124,6 +184,7 @@ a {
 
 body {
   font-family: "Oswald", sans-serif;
+  background-color: #f7f8f3;
 }
 
 header {
