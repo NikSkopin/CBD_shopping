@@ -1,192 +1,3 @@
-.about-weare {
-  width: 32rem;
-  margin: 6.25rem auto;
-  text-align: center;
-}
-
-.about-weare h1 {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: 0.3rem;
-}
-
-.products .buttons {
-  width: 20%;
-  margin: 30px auto;
-  text-align: center;
-}
-
-.slider-container {
-  overflow: hidden;
-}
-
-.slider-container .slider {
-  list-style: none;
-  white-space: nowrap;
-  padding: 0;
-  font-size: 0;
-}
-
-.slider-container .slider-item {
-  display: inline-block;
-  border: 1px solid #ced6af;
-  background-color: #fff;
-  width: 32%;
-  margin: 0 2% 0 0;
-}
-
-.slider-container .slider-item h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1688rem;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.slider-container .slider-item img {
-  width: 30%;
-  margin: 30px auto 50px auto;
-  display: block;
-}
-
-.slider-container .slider-item p {
-  display: inline-block;
-  width: 70%;
-  margin: 0;
-  font-size: 1rem;
-  background-color: #f7f8f3;
-  padding: 10px 0 10px 15px;
-  border-top: 1px solid #ced6af;
-}
-
-.slider-container .slider-item button {
-  display: inline-block;
-  width: 30%;
-  border: none;
-  margin: 0;
-  font-size: 1rem;
-  background-color: #6e774a;
-  padding: 10px 0 10px 15px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 1rem;
-}
-
-.about-tabs {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.about-tabs .tablinks {
-  width: 33.3%;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.375rem;
-  color: #1c1c1b;
-  font-weight: 400;
-}
-
-.about-tabs button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.about-tabs button:hover {
-  border-bottom: 1px solid #1c1c1b;
-}
-
-.about-tabs button.active {
-  border-bottom: 1px solid #1c1c1b;
-}
-
-.tabcontent {
-  display: none;
-  padding: 12px 12px;
-}
-
-.tab-text {
-  width: 50%;
-  padding: 0 1rem;
-}
-
-.tab-text h3 {
-  font-size: 1.25rem;
-  letter-spacing: 0.3rem;
-  margin-bottom: 3.125rem;
-  margin-top: 2rem;
-  text-transform: uppercase;
-  line-height: 2.5rem;
-}
-
-.tab-text p {
-  margin-top: 0;
-  font-size: 1rem;
-  color: #6e774a;
-  line-height: 2.125rem;
-  letter-spacing: 0.045rem;
-}
-
-.tab-images {
-  width: 50%;
-}
-
-.tab-images figure {
-  margin: 0;
-  padding: 0;
-}
-
-.tab-images img {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.showtab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-section, header, footer {
-  padding: 1px;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-body {
-  font-family: "Oswald", sans-serif;
-  background-color: #f7f8f3;
-}
-
 header {
   height: 100vh;
   position: relative;
@@ -306,5 +117,280 @@ header .slogan a:last-of-type {
 
 .closebtn {
   display: none;
+}
+
+.about-weare {
+  width: 32rem;
+  margin: 6.25rem auto;
+  text-align: center;
+}
+
+.about-weare h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+.products .buttons {
+  width: 20%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.products .buttons .left,
+.products .buttons .right {
+  color: #6e774a;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 300;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-container .slider {
+  list-style: none;
+  padding: 0;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-container .slider-item {
+  border: 1px solid #ced6af;
+  background-color: #fff;
+  width: 32%;
+}
+
+.card-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-container h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1688rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-container img {
+  width: 30%;
+  margin: 30px auto 50px auto;
+}
+
+.card-container p {
+  display: inline-block;
+  width: 70%;
+  margin: 0;
+  font-size: 1rem;
+  background-color: #f7f8f3;
+  padding: 10px 0 10px 15px;
+  border-top: 1px solid #ced6af;
+}
+
+.card-container button {
+  display: inline-block;
+  width: 30%;
+  border: none;
+  margin: 0;
+  font-size: 1rem;
+  background-color: #6e774a;
+  padding: 10px 0 10px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.about-tabs {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-tabs .tablinks {
+  width: 33.3%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.375rem;
+  color: #1c1c1b;
+  font-weight: 400;
+}
+
+.about-tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about-tabs button:hover {
+  border-bottom: 1px solid #1c1c1b;
+}
+
+.about-tabs button.active {
+  border-bottom: 1px solid #1c1c1b;
+}
+
+.tabcontent {
+  display: none;
+  padding: 12px 12px;
+}
+
+.tab-text {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.tab-text h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3.125rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+.tab-text p {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #6e774a;
+  line-height: 2.125rem;
+  letter-spacing: 0.045rem;
+}
+
+.tab-images {
+  width: 50%;
+}
+
+.tab-images figure {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-images img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.showtab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.faq {
+  padding: 4rem 0;
+}
+
+.faq h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.accordion {
+  color: #6e774a;
+  cursor: pointer;
+  padding: 18px;
+  width: 45%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0 auto;
+  background-color: transparent;
+  display: block;
+}
+
+.accordion:before {
+  content: '\02795';
+  font-size: 13px;
+  color: #6e774a;
+  float: left;
+  margin-right: 20px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+  outline: none;
+}
+
+.active::before {
+  content: '\2796';
+  color: #6e774a;
+}
+
+.panel {
+  width: 45%;
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section,
+header,
+footer {
+  padding: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #f7f8f3;
 }
 /*# sourceMappingURL=main.css.map */
