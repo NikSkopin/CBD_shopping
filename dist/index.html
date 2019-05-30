@@ -35,7 +35,11 @@
     <title>CBD Shopping</title>
   </head>
   <body>
-    <header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+
+    <header id="home">
       <nav class="navbar">
         <button class="navbar-btn-collapse" onclick="openNav()">
           <span></span>
@@ -50,20 +54,20 @@
           >
 
           <ul class="navbar-left">
-            <li class="navbar-left-item active">
-              <a class="navbar-left-link" href="#">Home</a>
-            </li>
-            <li class="navbar-left-item active">
-              <a class="navbar-left-link" href="#">About</a>
+            <li class="navbar-left-item">
+              <a class="navbar-left-link" href="#home">Home</a>
             </li>
             <li class="navbar-left-item">
-              <a class="navbar-left-link" href="#">products</a>
+              <a class="navbar-left-link" href="#about">About</a>
             </li>
             <li class="navbar-left-item">
-              <a class="navbar-left-link" href="#">faqs</a>
+              <a class="navbar-left-link" href="#products">products</a>
             </li>
             <li class="navbar-left-item">
-              <a class="navbar-left-link" href="#">contact us</a>
+              <a class="navbar-left-link" href="#faq">faqs</a>
+            </li>
+            <li class="navbar-left-item">
+              <a class="navbar-left-link" href="#contact">contact us</a>
             </li>
           </ul>
         </div>
@@ -88,7 +92,7 @@
       </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-weare">
         <h1>we are what we are</h1>
         <img src="./img/weare-logos.png" alt="main pros" />
@@ -157,10 +161,10 @@
 
           <div class="tab-images">
             <figure>
-              <img src="./img/whatweare-img-1.png" alt="what is cbd image" />
+              <img src="./img/what-is-3.jpg" alt="what is cbd image" />
             </figure>
             <figure>
-              <img src="./img/whatweare-img-2.png" alt="what is cbd image" />
+              <img src="./img/what-is-4.jpg" alt="what is cbd image" />
             </figure>
           </div>
         </div>
@@ -180,17 +184,17 @@
 
           <div class="tab-images">
             <figure>
-              <img src="./img/whatweare-img-1.png" alt="what is cbd image" />
+              <img src="./img/what-is-5.jpg" alt="what is cbd image" />
             </figure>
             <figure>
-              <img src="./img/whatweare-img-2.png" alt="what is cbd image" />
+              <img src="./img/what-is-6.jpg" alt="what is cbd image" />
             </figure>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
       <h1>CBD featured products</h1>
       <div class="slider-container">
         <ul class="slider">
@@ -265,7 +269,7 @@
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
       <h1>Frequently asked questions</h1>
       <div class="container">
         <button class="accordion">What is Cannabidiol (CBD)?</button>
@@ -303,6 +307,33 @@
         </div>
       </div>
     </section>
+
+    <footer id="contact">
+      <div class="container">
+        <ul class="footer-ul">
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">terms of use</a></li>
+          <li><a href="#">return policy</a></li>
+        </ul>
+        <div class="footer-middle">
+          <h1><a href="#">CBD</a></h1>
+
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <p>subscribe to newsletter</p>
+          <form action="#">
+            <input type="email" name="email" placeholder="Email" />
+            <button type="submit">&#8594;</button>
+          </form>
+        </div>
+        <ul class="footer-ul">
+          <li><a href="#">shipping info</a></li>
+          <li><a href="#">returns / exchanges</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="./js/script.js"></script>
   </body>

@@ -2,14 +2,14 @@
 
 // tabs
 function opentab(evt, tabNumber) {
-  const tabcontent = document.getElementsByClassName('tabcontent');
+  const tabcontent = document.querySelectorAll('.tabcontent');
   const tablink = document.getElementById(tabNumber);
 
   for (let i = 0; i < tabcontent.length; i++) {
     tabcontent[i].classList.remove('showtab');
   }
 
-  const tablinks = document.getElementsByClassName('tablinks');
+  const tablinks = document.querySelectorAll('.tablinks');
   for (let i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(' active', '');
   }
@@ -22,7 +22,6 @@ function opentab(evt, tabNumber) {
 const card = document.querySelectorAll('.slider-item');
 const quantity = card.length;
 let counter = 0;
-console.log(counter);
 
 function left() {
   if (counter > -quantity / 2) {
@@ -59,7 +58,7 @@ const acc = document.querySelectorAll('.accordion');
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
-    this.classList.toggle('active');
+    this.classList.toggle('active-acc');
     const panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -67,4 +66,22 @@ for (let i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + 'px';
     }
   });
+}
+
+//gotop button
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('myBtn').style.display = 'block';
+  } else {
+    document.getElementById('myBtn').style.display = 'none';
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
