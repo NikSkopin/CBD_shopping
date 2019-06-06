@@ -1,0 +1,23 @@
+@include mediaMd {
+  header {
+    .slogan {
+      margin-top: 15rem;
+    }
+  }
+
+  .about-tabs {
+    .tablinks {
+      font-size: 1rem;
+    }
+  }
+
+  .faq {
+    .accordion {
+      font-size: 16px;
+      width: 55%;
+    }
+  }
+}
+
+@include mediaSm {
+}
