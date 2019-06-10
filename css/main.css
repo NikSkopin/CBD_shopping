@@ -75,21 +75,6 @@ header .slogan a:last-of-type {
   padding: 9px 10px 0 10px;
 }
 
-.navbar-btn-collapse {
-  border: none;
-  border-radius: 4px;
-  display: none;
-  margin: 10px 0 0 10px;
-  background-color: #01183f;
-}
-
-.navbar-btn-collapse span {
-  display: block;
-  width: 16px;
-  margin: 6px 0;
-  border: 1px solid #fff;
-}
-
 .navbar-left {
   padding-left: 0;
 }
@@ -113,10 +98,6 @@ header .slogan a:last-of-type {
   left: 48%;
   top: 16px;
   font-size: 1.9rem;
-}
-
-.closebtn {
-  display: none;
 }
 
 .about-weare {
@@ -175,6 +156,7 @@ header .slogan a:last-of-type {
   border: 1px solid #ced6af;
   background-color: #fff;
   width: 32%;
+  height: 450px;
 }
 
 .card-container {
@@ -499,5 +481,106 @@ body {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+@media screen and (min-width: 501px) and (max-width: 968px) {
+  header .slogan {
+    margin-top: 15rem;
+  }
+  .about-tabs .tablinks {
+    font-size: 1rem;
+  }
+  .faq .accordion {
+    font-size: 16px;
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  header .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .navbar-left {
+    margin: 20 auto;
+  }
+  header .navbar-brand {
+    display: none;
+  }
+  header .navbar-right {
+    display: none;
+  }
+  header .slogan {
+    text-align: center;
+    margin-top: 6rem;
+  }
+  header .slogan h1 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    line-height: 2.5rem;
+    width: 100%;
+  }
+  header .slogan a:first-of-type {
+    width: 100%;
+    margin-left: 0;
+  }
+  header .slogan a:last-of-type {
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 1.125rem;
+    letter-spacing: 0.315rem;
+  }
+  .about-weare {
+    width: 100%;
+  }
+  .about-weare img {
+    width: 90%;
+  }
+  .about-tabs .tablinks {
+    font-size: 11px;
+  }
+  .about .tab-text {
+    width: 100%;
+  }
+  .about .tab-text h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about .tab-text p {
+    font-size: 0.8rem;
+  }
+  .about .tab-images {
+    display: none;
+  }
+  .products .buttons {
+    width: 40%;
+  }
+  .slider-container .slider-item {
+    width: 100%;
+  }
+  .accordion {
+    width: 100%;
+  }
+  .panel {
+    width: 95%;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  footer .container .footer-ul {
+    text-align: center;
+  }
+  footer .container .footer-ul li {
+    display: inline-block;
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

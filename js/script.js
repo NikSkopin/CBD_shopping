@@ -1,5 +1,3 @@
-// navigation
-
 // tabs
 function opentab(evt, tabNumber) {
   const tabcontent = document.querySelectorAll('.tabcontent');
@@ -19,37 +17,77 @@ function opentab(evt, tabNumber) {
 }
 
 //goods slider
+
 const card = document.querySelectorAll('.slider-item');
 const quantity = card.length;
+const resolution = window.matchMedia('(max-width: 500px)');
+
 let counter = 0;
 
-function left() {
-  if (counter > -quantity / 2) {
-    counter -= 1;
-    for (let i = 0; i < card.length; i++) {
+function showItems() {
+  const resolution = window.matchMedia('(max-width: 500px)');
+  if (resolution.matches) {
+    for (let i = 1; i < card.length; i++) {
       card[i].classList.add('hidden');
     }
-    for (let i = -counter; i < -counter + quantity / 2; i++) {
-      card[i].classList.remove('hidden');
+  }
+}
+
+showItems();
+
+function left() {
+  if (!resolution.matches) {
+    if (counter > -quantity / 2) {
+      counter -= 1;
+      for (let i = 0; i < card.length; i++) {
+        card[i].classList.add('hidden');
+      }
+      for (let i = -counter; i < -counter + quantity / 2; i++) {
+        card[i].classList.remove('hidden');
+      }
+      document.querySelector('.right').style.cursor = 'pointer';
+    } else {
+      document.querySelector('.left').style.cursor = 'not-allowed';
     }
-    document.querySelector('.right').style.cursor = 'pointer';
   } else {
-    document.querySelector('.left').style.cursor = 'not-allowed';
+    if (counter > -quantity + 1) {
+      counter -= 1;
+      for (let i = 0; i < card.length; i++) {
+        card[i].classList.add('hidden');
+      }
+      card[-counter].classList.remove('hidden');
+      document.querySelector('.right').style.cursor = 'pointer';
+    } else {
+      document.querySelector('.left').style.cursor = 'not-allowed';
+    }
   }
 }
 
 function right() {
-  if (counter < 0) {
-    counter += 1;
-    for (let i = 0; i < card.length; i++) {
-      card[i].classList.add('hidden');
+  if (!resolution.matches) {
+    if (counter < 0) {
+      counter += 1;
+      for (let i = 0; i < card.length; i++) {
+        card[i].classList.add('hidden');
+      }
+      for (let i = -counter; i < -counter + quantity / 2; i++) {
+        card[i].classList.remove('hidden');
+      }
+      document.querySelector('.left').style.cursor = 'pointer';
+    } else {
+      document.querySelector('.right').style.cursor = 'not-allowed';
     }
-    for (let i = -counter; i < -counter + quantity / 2; i++) {
-      card[i].classList.remove('hidden');
-    }
-    document.querySelector('.left').style.cursor = 'pointer';
   } else {
-    document.querySelector('.right').style.cursor = 'not-allowed';
+    if (counter < 0) {
+      counter += 1;
+      for (let i = 0; i < card.length; i++) {
+        card[i].classList.add('hidden');
+      }
+      card[-counter].classList.remove('hidden');
+      document.querySelector('.left').style.cursor = 'pointer';
+    } else {
+      document.querySelector('.right').style.cursor = 'not-allowed';
+    }
   }
 }
 
