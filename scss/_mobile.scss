@@ -20,4 +20,113 @@
 }
 
 @include mediaSm {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  header {
+    .navbar {
+      justify-content: center;
+    }
+    .navbar-left {
+      margin: 20 auto;
+    }
+    .navbar-brand {
+      display: none;
+    }
+    .navbar-right {
+      display: none;
+    }
+
+    .slogan {
+      text-align: center;
+      margin-top: 6rem;
+
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        line-height: 2.5rem;
+
+        width: 100%;
+      }
+      a {
+        &:first-of-type {
+          width: 100%;
+          margin-left: 0;
+        }
+        &:last-of-type {
+          margin-top: 40px;
+          font-weight: 300;
+          font-size: 1.125rem;
+          letter-spacing: 0.315rem;
+        }
+      }
+    }
+  }
+
+  .about {
+    &-weare {
+      width: 100%;
+      img {
+        width: 90%;
+      }
+    }
+    &-tabs {
+      .tablinks {
+        font-size: 11px;
+      }
+    }
+
+    .tab-text {
+      width: 100%;
+      h3 {
+        font-size: 1rem;
+        text-align: center;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .tab-images {
+      display: none;
+    }
+  }
+
+  .products {
+    .buttons {
+      width: 40%;
+    }
+  }
+  .slider-container {
+    .slider-item {
+      width: 100%;
+    }
+  }
+
+  .faq {
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .panel {
+    width: 95%;
+  }
+
+  footer {
+    .container {
+      flex-flow: column;
+      .footer {
+        &-ul {
+          text-align: center;
+          li {
+            display: inline-block;
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
 }

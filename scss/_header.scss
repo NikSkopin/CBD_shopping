@@ -74,20 +74,6 @@ header {
   justify-content: space-between;
   padding: 9px 10px 0 10px;
 
-  &-btn-collapse {
-    border: none;
-    border-radius: 4px;
-    display: none;
-    margin: 10px 0 0 10px;
-    background-color: rgb(1, 24, 63);
-    span {
-      display: block;
-      width: 16px;
-      margin: 6px 0;
-      border: 1px solid #fff;
-    }
-  }
-
   &-left {
     padding-left: 0;
     li {
@@ -113,8 +99,4 @@ header {
     top: 16px;
     font-size: 1.9rem;
   }
-}
-
-.closebtn {
-  display: none;
 }
